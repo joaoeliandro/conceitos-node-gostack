@@ -64,7 +64,7 @@ app.delete("/repositories/:id", (request, response) => {
   return response.status(204).send();
 });
 
-app.patch("/repositories/:id/like", (request, response) => {
+app.post("/repositories/:id/like", (request, response) => {
   // TODO
   const { id } = request.params;
 
